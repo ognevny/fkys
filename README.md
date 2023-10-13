@@ -3,9 +3,10 @@
 This language was created to fuck your brains out (like brainfuck)! By the way, there will be more features in the future,
 but if you are a sane person, DON'T use this language.
 
-How to build a compiler:
-Write ```g++ main.cpp -o compiler``` into the console, and then run ```./compiler```
-(Actually it requires g++ and iostream)
+How to build a compiler:  
+Run `make` in your terminal, and then run `./fkysc`
+(It requires `g++` or `clang++` and `make` to build)  
+OR compile `main.cpp` manually with your favourite compiler.
 
 ```
 Commands:
