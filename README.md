@@ -18,6 +18,7 @@ c - character output mode
 n - newline
 o - prints the contents of the cell to the console
 p - accepts input from the user into the cell 
+[] - while loop (continues while the cell != 0)
 ```
 
 PS: Please don't actually kill yourself, this language is purely to express my rage

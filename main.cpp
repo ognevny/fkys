@@ -67,8 +67,7 @@ void eval(char input) {
 void eval_code(string code) {
 	while (true) {
 		for (char elem : code) {
-			if (elem == 'b') break;
-			else eval(elem);
+			eval(elem);
 		}
 		if (::array[pointer] == 0) break;
 	}
