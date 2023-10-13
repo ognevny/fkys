@@ -8,7 +8,7 @@ Write ```g++ main.cpp -o compiler``` into the console, and then run ```./compile
 (Actually it requires g++ and iostream)
 
 Commands:
-> - move pointer to the right
+\> - move pointer to the right
 < - move pointer to the left
 + - increment cell by one
 - - decrement cell
