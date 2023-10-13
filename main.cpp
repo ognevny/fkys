@@ -12,8 +12,7 @@ void eval(char input) {
 
 		//pointer management
 		case '>':
-			pointer++;
-			if (pointer > 500) pointer -= 500;
+			pointer = (pointer + 1) % 500;
 			break;
 
 		case '<':
@@ -71,7 +70,7 @@ int main() {
 	while (compile_file >> input && input != 'e') {
 		eval(input);
 	}
-	
+
 	cout << "\nProgram ended." << endl;
 	return 0;
 }
