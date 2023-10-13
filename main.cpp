@@ -10,13 +10,17 @@ int main() {
 	int pointer = 0, user_input;
 	char input;
 
+	bool integer_mode = true;
+
 	while (compile_file >> input && input != 'e') {
 		switch (input) {
+
 			//pointer management
 			case '>':
 				pointer++;
 				if (pointer > 500) pointer -= 500;
 				break;
+
 			case '<':
 				pointer--;
 				if (pointer < 0) pointer += 500;
@@ -26,14 +30,17 @@ int main() {
 			case '+':
 				array[pointer]++;
 				break;
+
 			case '-':
 				array[pointer]--;
 				break;
 
 			//input and output
 			case 'o':
-				cout << array[pointer];
+				if (integer_mode) cout << array[pointer];
+				else cout << (char) array[pointer];
 				break;
+
 			case 'p':
 				cin >> user_input;
 				array[pointer] = user_input;
@@ -42,6 +49,15 @@ int main() {
 			//newline
 			case 'n':
 				cout << "\n";
+				break;
+
+			//output modes
+			case 'i':
+				integer_mode = true;
+				break;
+			
+			case 'c':
+				integer_mode = false;
 				break;
 		}
 	}
