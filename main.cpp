@@ -16,21 +16,21 @@ void eval(char input) {
 
 		//pointer management
 		case '>':
-			pointer = (pointer + 1) % 500;
+			::pointer = (::pointer + 1) % 500;
 			break;
 
 		case '<':
-			pointer--;
-			if (pointer < 0) pointer += 500;
+			::pointer--;
+			if (::pointer < 0) ::pointer += 500;
 			break;
 			
 		//increment and decrement
 		case '+':
-			::array[pointer]++;
+			::array[::pointer]++;
 			break;
 
 		case '-':
-			::array[pointer]--;
+			::array[::pointer]--;
 			break;
 
 		//input and output
@@ -102,9 +102,6 @@ int main() {
 			code = "";
 		}
 	}
-
-	cout << "\n" << code;
-	cout << "\nProgram ended." << endl;
-	cout << "Pointer position: " << pointer << endl;
+	cout << "\n\nProgram ended." << endl;
 	return 0;
 }

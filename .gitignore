@@ -2,3 +2,4 @@ main
 .vscode
 *.exe
 fkysc
+.DS_Store
