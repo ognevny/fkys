@@ -1,5 +1,5 @@
 # *FUCKING KILL YOURSELF!*
-This language is the only GOOD one. C++, python, or any other hipster bullshit that you right now fails when compared *FKYS!*! So just start using it now, look at the next paragraph to see how to build a compiler!
+This language is the only ***GOOD*** one. C++, python, or any other ***HIPSTER BULLSHIT*** that you use right now fails when compared *FKYS!*! So just start using it now, look at the next paragraph to see how to build a compiler!
 
 # How to build a compiler:  
 Run `make` in your terminal, and then run `./fkysc`
