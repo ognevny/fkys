@@ -63,7 +63,7 @@ But if you remove the `c` at the start, the code will produce the next thing:
 Loops repeat until the current cell's value doesn't equal to 0.
 For example, the next code outputs the ASCII table.
 ```
-l[oscoi-]
+l[oscoin-]
 ```
 Pssst, we are also gonna add the for loop, so stick with this project.
 
