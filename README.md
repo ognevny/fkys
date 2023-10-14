@@ -22,4 +22,12 @@ p - accepts input from the user into the cell
 l - set the current cell to 125
 ```
 
+The following code outputs "Hello, world!" to the console:
+```
+cl-----------------------------------------------------o
+>l------------------------o+++++++oo+++o>+++++++++++
++++++++++++++++++++++++++++++++++os>l------o<<o+++o------o----
+----o>-----------o
+```
+
 PS: Please don't actually kill yourself, this language is purely to express my rage
