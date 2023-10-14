@@ -26,7 +26,10 @@ In the next code example we make the value of the cell at 0 equal to 3.
 
 Use `l` to set cell's value to 125
 
-`l---` Now the value of the cell at 0 is equal to 122.
+```
+l---
+```
+ Now the value of the cell at 0 is equal to 122.
 
 # Input and output
 
@@ -59,7 +62,9 @@ But if you remove the `c` at the start, the code will produce the next thing:
 # Loops
 Loops repeat until the current cell's value doesn't equal to 0.
 For example, the next code outputs the ASCII table.
-```l[oscoi-]```
+```
+l[oscoi-]
+```
 Pssst, we are also gonna add the for loop, so stick with this project.
 
 # Other stuff
