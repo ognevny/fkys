@@ -22,7 +22,7 @@ p - accepts input from the user into the cell
 l - set the current cell to 125
 ```
 
-The following code outputs "Hello, world!" to the console:
+The following code outputs ```Hello, world!``` to the console:
 ```
 cl-----------------------------------------------------o
 >l------------------------o+++++++oo+++o>+++++++++++
