@@ -53,6 +53,10 @@ void eval(char input) {
 			cout << " ";
 			break;
 
+		case 'l':
+			::array[pointer] = 125;
+			break;
+
 		//output modes
 		case 'i':
 			integer_mode = true;
