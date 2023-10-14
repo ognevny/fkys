@@ -3,35 +3,66 @@ This language is the only ***GOOD*** one. C++, python, or any other ***HIPSTER B
 
 By the way, if you are a so called 'R*st' user, check out [FKYSOxyde](https://github.com/ognevnydemon/fkys-rs) because you like quote on quote 'safe code'.
 
-# How to build a compiler: 
+# How to build a compiler
 Run `make` in your terminal, and then run `./fkysc`
 (It requires `g++` or `clang++` and `make` to build)  
 OR compile `main.cpp` manually with your favourite compiler
 
+# Pointer
+In this programming language you have an integer array of 500 elements. (Integer limits: -2147483648 and 2147483647) You also have a pointer, which allows you to work with elements from the array. To move the pointer use `<` and `>`.
 
-# Commands
+In the next code example, we go from cell 0 to cell 4.
 ```
-e - exits the program
-> - move pointer to the right
-< - move pointer to the left
-+ - increment cell by one
-- - decrement cell
-i - integer output mode (works by default)
-c - character output mode
-n - newline
-s - prints space
-o - prints the contents of the cell to the console
-p - accepts input from the user into the cell 
-[] - while loop (continues while the cell != 0)
-l - set the current cell to 125
+>>>>><
+```
+# Working with cells
+
+Use `+` and `-` to increment or decrement the value in the current cell.
+
+In the next code example we make the value of the cell at 0 equal to 3.
+```
+++++-
 ```
 
-For example, the following code outputs ```Hello, world!``` to the console:
+Use `l` to set cell's value to 125
+
+`l---` Now the value of the cell at 0 is equal to 122.
+
+# Input and output
+
+Use `o` to output current cell's value, use `p` to input the number from the console.
+
+```
+p---o
+```
+If we input 20, the code will output 17.
+Also use `s` to output space, and use `n` to go to the next line.
+
+# Output modes
+
+What if you wanted to output text? Well you can do that. Use `c` to go into text output mode, and use `i` to go back to number output mode.
+When you are in the text output mode, numbers are converted to characters using the ASCII table.
+For example, the following code outputs `Hello, world!`
+
 ```
 cl-----------------------------------------------------o
 >l------------------------o+++++++oo+++o>+++++++++++
 +++++++++++++++++++++++++++++++++os>l------o<<o+++o------o----
 ----o>-----------o
 ```
+
+But if you remove the `c` at the start, the code will produce the next thing:
+```
+7210110810811144 11911111410810033
+``` 
+
+# Loops
+Loops repeat until the current cell's value doesn't equal to 0.
+For example, the next code outputs the ASCII table.
+```l[oscoi-]```
+Pssst, we are also gonna add the for loop, so stick with this project.
+
+# Other stuff
+Use `e` to exit the program.
 
 ### PS: many more features coming soon...
