@@ -1,5 +1,6 @@
 #include <fstream>
 #include <iostream>
+#include <string>
 using namespace std;
 
 int array[500];
@@ -7,13 +8,15 @@ int pointer = 0, user_input;
 char input;
 bool integer_mode = true;
 
+string code = "";
+bool collecting_code = false;
+
 void eval(char input) {
 	switch (input) {
 
 		//pointer management
 		case '>':
-			pointer++;
-			if (pointer > 500) pointer -= 500;
+			pointer = (pointer + 1) % 500;
 			break;
 
 		case '<':
@@ -41,9 +44,17 @@ void eval(char input) {
 			::array[pointer] = user_input;
 			break;
 
-		//newline
+		//symbols
 		case 'n':
 			cout << "\n";
+			break;
+
+		case 's': 
+			cout << " ";
+			break;
+
+		case 'l':
+			::array[pointer] = 125;
 			break;
 
 		//output modes
@@ -57,6 +68,14 @@ void eval(char input) {
 	}
 }
 
+void eval_code(string code) {
+	while (true) {
+		for (char elem : code) {
+			eval(elem);
+		}
+		if (::array[pointer] == 0) break;
+	}
+}
 
 int main() {
 	ifstream compile_file("main.fkys");
@@ -69,9 +88,19 @@ int main() {
 	bool integer_mode = true;
 
 	while (compile_file >> input && input != 'e') {
-		eval(input);
+		if (!collecting_code) eval(input);
+		else code += input;
+		
+		if (input == '[') {
+			collecting_code = true;
+		} else if (input == ']') {
+			collecting_code = false;
+			eval_code(code);
+			code = "";
+		}
 	}
-	
+
+	cout << "\n" << code;
 	cout << "\nProgram ended." << endl;
 	return 0;
 }
