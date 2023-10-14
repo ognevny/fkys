@@ -102,5 +102,6 @@ int main() {
 
 	cout << "\n" << code;
 	cout << "\nProgram ended." << endl;
+	cout << "Pointer position: " << pointer << endl;
 	return 0;
 }
