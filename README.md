@@ -1,7 +1,5 @@
-*FUCKING KILL YOURSELF!*
-
-This language was created to fuck your brains out (like brainfuck)! By the way, there will be more features in the future,
-but if you are a sane person, DON'T use this language.
+# *FUCKING KILL YOURSELF!*
+This language is the only GOOD one. C++, python, or any other hipster bullshit that you right now fails when compared *FKYS!*! So just start using it now, look at the next paragraph to see how to build a compiler!
 
 # How to build a compiler:  
 Run `make` in your terminal, and then run `./fkysc`
@@ -26,7 +24,7 @@ p - accepts input from the user into the cell
 l - set the current cell to 125
 ```
 
-The following code outputs ```Hello, world!``` to the console:
+For example, the following code outputs ```Hello, world!``` to the console:
 ```
 cl-----------------------------------------------------o
 >l------------------------o+++++++oo+++o>+++++++++++
@@ -34,4 +32,4 @@ cl-----------------------------------------------------o
 ----o>-----------o
 ```
 
-# PS: many more features coming soon...
+### PS: many more features coming soon...
