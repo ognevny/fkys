@@ -1,15 +1,15 @@
-# *FUCKING KILL YOURSELF!*
-This language is the only ***GOOD*** one. C++, python, or any other ***HIPSTER BULLSHIT*** that you use right now fails when compared ***FKYS!***! So just start using it now, look at the next paragraph to see how to build a compiler!
+# FUCKING KILL YOURSELF!
+This language is the only ***GOOD*** one. C++, python, or any other ***HIPSTER BULLSHIT*** that you use right now fails when compared ***FKYS!*** So just start using it now, look at the next paragraph to see how to build a compiler!
 
 By the way, if you are a so called 'R*st' user, check out [FKYSOxyde](https://github.com/ognevnydemon/fkys-rs) because you like quote on quote 'safe code'.
 
-# How to build a compiler:  
+# How to build a compiler: 
 Run `make` in your terminal, and then run `./fkysc`
 (It requires `g++` or `clang++` and `make` to build)  
 OR compile `main.cpp` manually with your favourite compiler
 
 
-# Commands:
+# Commands
 ```
 e - exits the program
 > - move pointer to the right
