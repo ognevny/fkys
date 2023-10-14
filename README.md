@@ -15,6 +15,7 @@ e - exits the program
 i - integer output mode (works by default)
 c - character output mode
 n - newline
+s - prints space
 o - prints the contents of the cell to the console
 p - accepts input from the user into the cell 
 [] - while loop (continues while the cell != 0)
