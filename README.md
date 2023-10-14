@@ -9,6 +9,7 @@ Write ```g++ main.cpp -o compiler``` into the console, and then run ```./compile
 
 ```
 Commands:
+e - exits the program
 > - move pointer to the right
 < - move pointer to the left
 + - increment cell by one
