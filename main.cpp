@@ -65,6 +65,9 @@ void eval(char input) {
 		case 'c':
 			integer_mode = false;
 			break;
+
+		default:
+			break;
 	}
 }
 
